@@ -1,0 +1,17 @@
+using System;
+//Console.WriteLine("Óla mundo");
+
+/* algoritmo 1: Carteira de motorista
+-Dada a idade de uma pessoa
+-Caso a idade seja maior ou igual a 18, pode tirar a carteira
+-Senão não pode
+*/
+int idade = 16;
+if (idade >= 18)
+{
+   Console.WriteLine("Pode tirar a carteira.");
+}
+else
+{
+  Console.WriteLine("Não pode tirar a carteira.");
+}  
