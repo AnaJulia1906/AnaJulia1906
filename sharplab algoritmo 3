@@ -1,0 +1,31 @@
+using System;
+//console.WriteLine.("Olá mundo");
+
+/* Algoritmo 3: cáucolo de salário com comissão
+  - Dados os sálarios fixo e o valor total das vendas efetuadas por um
+  vendedor
+  - Sabendo que ele recebe 5% de comissão sobre o valor total de vendas até
+  R$ 2.000,00 e mais 10% sobre o que ultrapassar esse valor
+  - Caucular e exibir seu salário total
+*/
+
+const decimal primeironivelcomissao = 2000;
+const decimal porcentagemprimeironivel = 0.5m;
+const decimal porcentagemaposprimeironivel = 0.1m;
+
+decimal salariofixo = 3000;
+decimal totalvendas = 1500;
+
+decimal comissao = 0;
+
+if (totalvendas > primeironivelcomissao )
+{
+  comissao = (totalvendas - primeironivelcomissao) * 0.1m;
+  comissao += (primeironivelcomissao * porcentagemprimeironivel);
+}
+else
+{
+   comissao = totalvendas * porcentagemaposprimeironivel;
+}
+
+Console.WriteLine($"O salário total é:  {comissao + salariofixo} ");
